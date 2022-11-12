@@ -1,0 +1,58 @@
+:root {
+    --background-color: #ffffff;
+    --content-box: #eeeeee;
+    --title-color: #000000;
+    --text-color: #444444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: var(--text-color)
+}
+a, button, img { transition: all 0.5s ease-in-out; }
+a { text-decoration: none; color: var(--main-color); }
+a:hover { color: var(--third-color); }
+button:hover { cursor: pointer; }
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 25px;
+}
+header .genre-theme {
+    align-self: flex-end;
+    order: 0;
+    padding: 10px;
+}
+header .title {
+    text-align: center;
+    order: 1;
+    color: var(--title-color);
+}
+
+.main-body {
+    display: flex;
+    padding: 5px;
+}
+.main-body section {
+    background-color: var(--content-box);
+    flex: 1;
+    margin: 5px;
+    padding: 12px;
+}
+.main-body .story-timeline {
+    flex: 1 40%;
+}
+.main-body h2 {
+    margin: 0 0 5px;
+}
